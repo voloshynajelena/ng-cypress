@@ -1,0 +1,61 @@
+:host {
+  ::ng-deep {
+    .p-inputtext {
+      width: 100%;
+      border: none;
+    }
+
+    p-password,
+    .p-password {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.content {
+  width: 350px;
+  margin: 5% auto;
+  text-align: center;
+
+  .form-content {
+  }
+}
+
+.invalid-feedback {
+  width: 230px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  bottom: 10px;
+  color: red;
+}
+
+.header {
+  margin: 0 auto;
+
+  .image-container {
+    padding: 15px 0;
+
+    img {
+      margin: 0 auto;
+      max-width: 180px;
+      width: 100%;
+    }
+  }
+}
+
+.about-private {
+  margin: 20px 30px;
+  text-align: start;
+}
+
+.about-private a {
+  text-decoration: none;
+  color: #d1ab71;
+  font-weight: 900;
+}
+
+.login {
+  margin-right: 10px;
+}

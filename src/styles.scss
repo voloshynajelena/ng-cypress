@@ -1,1 +1,113 @@
 /* You can add global styles to this file, and also import other style files */
+@use 'primeicons/primeicons.css' as *;
+
+/* angular-cli file: src/styles.css */
+
+/* Importing Bootstrap SCSS file. */
+@use 'bootstrap/scss/bootstrap' as *;
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  //background: linear-gradient(99deg, #F6F9FE 0%, #E8F1F8 100%);
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  background-color: #fafafa !important;
+}
+
+@media (max-width: 725px) {
+  .mobile-hide {
+    display: none !important;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  .p-dynamic-dialog.p-component.p-dialog {
+    .p-dialog-content {
+      overflow-y: auto !important;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .desktop-hide {
+    display: none !important;
+  }
+}
+
+.ng-trigger.ng-trigger-overlayAnimation.p-datepicker.p-component.p-datepicker-inline {
+  width: 100% !important;
+}
+
+.user-info {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  min-width: 280px;
+  font-size: 16px;
+  line-height: 1.1;
+  .user-info-img {
+    width: 45px;
+    margin-right: 8px;
+  }
+  .user-info-text {
+    min-width: 0;
+    flex: 1;
+  }
+  .user-info-name,
+  .user-info-email {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .user-info-name {
+    font-weight: 500;
+    font-size: 0.9em;
+  }
+  .user-info-email {
+    font-size: 0.8em;
+    color: rgba(#000, 0.6);
+  }
+  * {
+    cursor: default;
+  }
+}
+
+.header-help {
+  .p-menu.p-menu-overlay {
+    overflow: hidden;
+    padding: 0;
+  }
+}
+.header-user-menu {
+  p-menu {
+    .p-menu.p-menu-overlay {
+      min-width: 230px;
+      overflow: hidden;
+      padding: 0;
+      .p-menuitem:last-child {
+        border-top: 1px solid #dee2e6;
+        .p-menuitem-link {
+          span {
+            color: red;
+          }
+        }
+      }
+      .p-menuitem:first-child {
+        border-bottom: 1px solid #dee2e6;
+        .p-menuitem-link:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+.custom-max-width {
+  .p-datepicker.p-component.p-datepicker-touch-ui {
+    max-width: 331.5px !important;
+    min-width: auto;
+  }
+}
